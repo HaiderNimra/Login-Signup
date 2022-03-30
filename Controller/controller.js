@@ -1,13 +1,6 @@
-const express= require('express');
-const router=express.Router();
 const { users }= require("../models/users");
-const Otp = require('../models/otp')
-const auth = require('../middlewares/auth');
-const admin = require('../middlewares/admin');
-const getUser = require('../middlewares/getUser');
-var bcrypt = require('bcryptjs');
+const Otp = require('../models/otp');
 var _ = require('lodash');
-var jwt = require('jsonwebtoken');
 require('dotenv').config(); 
 
 
